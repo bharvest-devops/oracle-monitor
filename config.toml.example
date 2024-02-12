@@ -1,0 +1,19 @@
+[general]
+# We support only mainnet
+# TBD: Support testnet
+network = "mainnet"
+# Program execution period (minutes)
+period = 60
+listen_port = 8080
+
+[umee-oracle]
+enable = true
+grpc = "umee-grpc:9090"
+validator_acc = "umee1..."
+# Trigger an alarm, if uptime is less than min_uptime
+min_uptime = 0.10
+
+[tg]
+enable = true
+token = "123:AA-BB..."
+chat_id = "123..."
